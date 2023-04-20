@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Incrementador</title>
+    <link rel="icon" href="./img/image.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="./script.js" defer></script>
+    <script src="https://kit.fontawesome.com/3cd94c78a3.js" crossorigin="anonymous" defer></script>
+</head>
+<body class="col">
+    <section class="container col">
+        <h1>Incrementador</h1>
+        <div class="div-input">
+          <p>Número Base:</p>
+          <input type="text" class="input number" tabindex="1" placeholder="Digite o nº inicial">
+        </div>
+        <div class="div-input">
+          <p>Quantidade de incrementos:</p>
+          <input type="text" class="input quant" tabindex="2" placeholder="Digite o nº de acréssimos">
+        </div>
+        <button class="gerar" type="button" onclick= gerar() >Gerar</button>
+    </section>
+
+    <section class="listar col">
+      <i class="fa-solid fa-xmark" onclick=btnDelete()></i>
+    </section>
+
+    
+</body>
+</html>

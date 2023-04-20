@@ -1,0 +1,179 @@
+*{
+  margin:0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:1rem
+}
+
+.col{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  
+  gap:1rem
+}
+
+body{
+  height: 100vh;
+  background-color: #20c0db;
+
+}
+
+/* Container */
+.container{
+  background-color: #20c0db;
+  box-shadow:  20px 20px 60px #029bb7,-20px -20px 60px #44e2fe;
+  width: 300px;
+  height: 350px;
+
+  gap:0;
+  justify-content: flex-start;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-top: 5rem;
+}
+
+h1{
+  color: #fff;
+}
+/* Estilo dos inputs */
+.div-input{
+  padding-top: 2rem;
+}
+
+p{
+  font-size:12px;
+  color:#fff;
+  padding-bottom: .2rem;
+  padding-left: 4px;
+}
+
+.input{
+  width: 180px;
+  border: none;
+  border-radius: 50px;
+  padding: 5px;
+  padding-left: 8px;
+  
+}
+
+.input:focus{
+  outline-color:#70bf54;
+  color:red
+}
+
+input:focus::placeholder{
+  color: red;
+}
+
+button.gerar{
+  width: 8rem;
+  height: 2rem;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  
+  margin-top: 2.5rem;
+
+  font-weight: 700;
+  text-align: center;
+  line-height: 1px;
+
+  transition: .5s ease;
+}
+
+.gerar:hover{
+  background-color: transparent;
+  border:1.5px solid #fff;
+  color: #fff;
+  font-weight: 700;
+  transform: scale(1.1);
+  line-height: 1px;
+}
+
+.gerar:active{
+  background-color: red;
+  color: #fff;
+  border: none;
+  transform: scale(1);
+}
+
+/* Estilos do resultado */
+.listar{
+  color: #fff;
+  background-color: red;
+  box-shadow:  20px 20px 60px #007e95,-20px -20px 60px #44e2fe;
+  width: 471px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 2.5rem;
+  margin-top: 3rem;
+  position: relative;
+  border-radius: 15px;
+  visibility: hidden;
+}
+
+.fa-xmark{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px 15px;
+  transition: .5s ease;
+}
+
+.fa-xmark:hover{
+  background-color:white;
+  color: red;
+  padding: 2px px;
+  border-radius: 3px;
+}
+
+.fa-xmark:active{
+  transform: scale(0.8);
+}
+
+textarea{
+  outline:none;
+  border: none;
+  resize: none;
+  overflow:hidden;
+  
+  width: 50px;
+  height: 20px;
+  text-align:center;
+  background-color: aquamarine;
+  ;
+}
+
+button.copiar{
+  width: 4rem;
+  height: 1.5rem;
+  background-color: #70bf54;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+
+  font-weight: 700;
+  text-align: center;
+  line-height: 1px;
+
+  transition: .3s ease;
+}
+
+.copiar:hover{
+  transform: scale(1.15);
+}
+
+.copiar:active{
+  transform: scale(1);
+}
